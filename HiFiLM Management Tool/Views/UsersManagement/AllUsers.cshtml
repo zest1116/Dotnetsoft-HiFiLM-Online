@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Dotnetsoft.HiFiLM.Graph.Dto.User>
+﻿@model IEnumerable<Dotnetsoft.HiFiLM.Graph.Models.User>
 
 @{
     ViewBag.Title = Resources.ResourceDictionary.UsersManagement_AllUsers;
@@ -10,7 +10,7 @@
         <h1 class="h2">@ViewBag.Title</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-url="@Url.Action("EntryUser", "UsersManagement")" onclick="loadUserEntry(this)">
                     <span class="fa fa-plus"></span>
                     @Resources.ResourceDictionary.UsersManagement_NewUser
                 </button>

@@ -12,15 +12,15 @@ namespace Dotnetsoft.HiFiLM.Graph.Services
         {
         }
 
-        public async Task<IList<Dto.User>> GetUsers()
+        public async Task<IList<Models.User>> GetUsersAsync()
         {
             try
             {
                 IGraphServiceUsersCollectionPage users = await graphClient.Users.Request(requestOptions).Select("displayName,userPrincipalName,userType,assignedLicenses").GetAsync();
-                List<Dto.User> values = new List<Dto.User>();
+                List<Models.User> values = new List<Models.User>();
                 foreach(User user in users.CurrentPage)
                 {
-                    Dto.User value = new Dto.User()
+                    Models.User value = new Models.User()
                     {
                         ObjectId = user.Id,
                         UserName = user.DisplayName,

@@ -133,6 +133,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Identity과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string UsersManagement_Identity {
+            get {
+                return ResourceManager.GetString("UsersManagement_Identity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   New User과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string UsersManagement_NewUser {

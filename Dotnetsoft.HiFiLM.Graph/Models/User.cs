@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dotnetsoft.HiFiLM.Graph.Dto
+namespace Dotnetsoft.HiFiLM.Graph.Models
 {
     public class User
     {

@@ -141,6 +141,9 @@
   <data name="UsersManagement_DisplayName" xml:space="preserve">
     <value>DisplayName</value>
   </data>
+  <data name="UsersManagement_Identity" xml:space="preserve">
+    <value>Identity</value>
+  </data>
   <data name="UsersManagement_NewUser" xml:space="preserve">
     <value>New User</value>
   </data>
