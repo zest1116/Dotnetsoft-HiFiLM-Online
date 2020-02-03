@@ -23,16 +23,28 @@ namespace Dotnetsoft.HiFiLM.Management.Tool.Controllers
         [HttpGet]
         public async Task<ActionResult> EntryUser()
         {
-            if (Request.IsAjaxRequest())
+
+            return View();
+            //if (Request.IsAjaxRequest())
+            //{
+            //    using (CommonService service = new CommonService(Helpers.GraphHelper.GetAuthenticatedClient()))
+            //    {
+            //        var domains = await service.GetDomainsAsync().ConfigureAwait(false);
+            //        ViewData["Domains"] = domains;
+            //        return PartialView("_PartialUserEntry", new User());
+            //    }
+            //}
+            //return PartialView("_PartialUserEntry", new User());
+        }
+
+        public async Task<EmptyResult> CreateExtensions()
+        {
+            using (AdminService service = new AdminService(Helpers.GraphHelper.GetAuthenticatedClient()))
             {
-                using (CommonService service = new CommonService(Helpers.GraphHelper.GetAuthenticatedClient()))
-                {
-                    var domains = await service.GetDomainsAsync().ConfigureAwait(false);
-                    ViewData["Domains"] = domains;
-                    return PartialView("_PartialUserEntry", new User());
-                }
+                await service.UpdateGroupExtensions();
             }
-            return PartialView("_PartialUserEntry", new User());
+
+            return new EmptyResult();
         }
     }
 }
