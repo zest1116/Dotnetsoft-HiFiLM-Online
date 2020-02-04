@@ -9,14 +9,20 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">@ViewBag.Title</h3>
-                <div class="card-tools">
-                    <div class="input-group input-group-sm" style="width: 150px;">
+                <div class="card-tools float-left">
+                    <div class="input-group input-group-sm mt-0" >
                         <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                         </div>
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">New User</button>
+                        <button type="button" class="btn btn-primary">Delete User</button>
+                        <button type="button" class="btn btn-primary">Bulk Create</button>
                     </div>
                 </div>
             </div>
@@ -47,6 +53,3 @@
         </div>
     </div>
 </div>
-
-
-

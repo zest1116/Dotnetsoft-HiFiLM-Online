@@ -25,6 +25,7 @@ namespace Dotnetsoft.HiFiLM.Management.Tool
             bundles.Add(new ScriptBundle("~/bundles/adminlte").Include(
                       "~/Scripts/AdminLTE/adminlte.js",
                       "~/Scripts/OverlayScrollbars/OverlayScrollbars.js",
+                      "~/Scripts/AdminLTE/demo.js",
                       "~/Scripts/HiFilm/MainMenu.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
