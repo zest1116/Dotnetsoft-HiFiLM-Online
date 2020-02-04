@@ -2,49 +2,41 @@
 
 @{
     ViewBag.Title = Resources.ResourceDictionary.UsersManagement_AllUsers;
-    Layout = "~/Views/Shared/_LayoutUsersManagement.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-        <h1 class="h2">@ViewBag.Title</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-            <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='@Url.Action("EntryUser", "UsersManagement")'">
-                    <span class="fa fa-plus"></span>
-                    @Resources.ResourceDictionary.UsersManagement_NewUser
-                </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='@Url.Action("CreateExtensions", "UsersManagement")'">
-                    <span class="fa fa-trash"></span>
-                    @Resources.ResourceDictionary.UsersManagement_DeleteUser
-                </button>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>@ViewBag.Title</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0">
+                <table class="table table-head-fixed text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>@Resources.ResourceDictionary.UsersManagement_DisplayName</th>
+                            <th>@Resources.ResourceDictionary.UsersManagement_PrincipalName</th>
+                            <th>@Resources.ResourceDictionary.UsersManagement_UserType</th>
+                            <th>@Resources.ResourceDictionary.UsersManagement_AssignedLicenses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.UserName</td>
+                                <td>@item.UserPrincipalName</td>
+                                <td>@item.UserType</td>
+                                <td>@item.AssignedLicenses</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
-    <div class="table-responsive">
-        <table class="table table-striped table-sm">
-            <thead>
-                <tr>
-                    <th>@Resources.ResourceDictionary.UsersManagement_DisplayName</th>
-                    <th>@Resources.ResourceDictionary.UsersManagement_PrincipalName</th>
-                    <th>@Resources.ResourceDictionary.UsersManagement_UserType</th>
-                    <th>@Resources.ResourceDictionary.UsersManagement_AssignedLicenses</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach(var item in Model)
-                {
-                    <tr>
-                        <td>@item.UserName</td>
-                        <td>@item.UserPrincipalName</td>
-                        <td>@item.UserType</td>
-                        <td>@item.AssignedLicenses</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</main>
+</div>
 
 

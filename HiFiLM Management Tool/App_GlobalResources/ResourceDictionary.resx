@@ -118,10 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Common_ApplicationName" xml:space="preserve">
-    <value>HiFiLM</value>
-  </data>
-  <data name="Common_CompanyName" xml:space="preserve">
-    <value>Dotnetsoft</value>
+    <value>HiFiLM Online</value>
   </data>
   <data name="Main_Dashboard" xml:space="preserve">
     <value>Dashboard</value>

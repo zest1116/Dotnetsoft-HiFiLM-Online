@@ -225,6 +225,18 @@
     <Compile Include="TokenStorage\SessionTokenStore.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AdminLTE\adminlte.css" />
+    <Content Include="Content\AdminLTE\adminlte.min.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.components.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.components.min.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.core.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.core.min.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.extra-components.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.extra-components.min.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.pages.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.pages.min.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.plugins.css" />
+    <Content Include="Content\AdminLTE\alt\adminlte.plugins.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -235,10 +247,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\MainMenu_DefaultUserPhoto.png" />
+    <Content Include="Content\OverlayScrollbars\OverlayScrollbars.css" />
+    <Content Include="Content\OverlayScrollbars\OverlayScrollbars.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\AdminLTE\adminlte.js" />
+    <Content Include="Scripts\AdminLTE\adminlte.min.js" />
+    <Content Include="Scripts\AdminLTE\demo.js" />
     <Content Include="Scripts\bootstrap-treeview.js" />
     <Content Include="Scripts\bootstrap-treeview.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -260,6 +278,8 @@
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\HiFilm\MainMenu.js" />
+    <Content Include="Scripts\HiFilm\UsersManagement.js" />
     <Content Include="Scripts\index.js.flow" />
     <Content Include="Scripts\esm\popper.min.js.map" />
     <Content Include="Scripts\esm\popper.js.map" />
@@ -283,6 +303,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\OverlayScrollbars\jquery.overlayScrollbars.js" />
+    <Content Include="Scripts\OverlayScrollbars\jquery.overlayScrollbars.min.js" />
+    <Content Include="Scripts\OverlayScrollbars\OverlayScrollbars.js" />
+    <Content Include="Scripts\OverlayScrollbars\OverlayScrollbars.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />

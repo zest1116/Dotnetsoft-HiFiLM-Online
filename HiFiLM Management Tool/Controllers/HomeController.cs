@@ -10,6 +10,7 @@ namespace Dotnetsoft.HiFiLM.Management.Tool.Controllers
     {
         public ActionResult Dashboard()
         {
+            ViewBag.Title = Resources.ResourceDictionary.Main_Dashboard;
             return View();
         }
     }

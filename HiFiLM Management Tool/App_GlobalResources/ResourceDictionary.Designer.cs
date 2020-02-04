@@ -61,20 +61,11 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   HiFiLM과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   HiFiLM Online과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string Common_ApplicationName {
             get {
                 return ResourceManager.GetString("Common_ApplicationName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Dotnetsoft과(와) 유사한 지역화된 문자열을 찾습니다.
-        /// </summary>
-        internal static string Common_CompanyName {
-            get {
-                return ResourceManager.GetString("Common_CompanyName", resourceCulture);
             }
         }
         
