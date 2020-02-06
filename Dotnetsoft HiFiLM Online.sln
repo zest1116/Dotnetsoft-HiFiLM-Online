@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiFiLM Management Tool", "HiFiLM Management Tool\HiFiLM Management Tool.csproj", "{9095A9E0-6C77-42F3-8495-D77E22BF2AA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetsoft.HiFiLM.Graph", "Dotnetsoft.HiFiLM.Graph\Dotnetsoft.HiFiLM.Graph.csproj", "{C986674C-D566-40A5-A320-12DB0CCDF09E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnetsoft.HiFiLM.Graph", "Dotnetsoft.HiFiLM.Graph\Dotnetsoft.HiFiLM.Graph.csproj", "{C986674C-D566-40A5-A320-12DB0CCDF09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiFiLM Provisioning Service", "HiFiLM Provisioning Service\HiFiLM Provisioning Service.csproj", "{D9E36881-9920-4DCC-90CA-CE77809236B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C986674C-D566-40A5-A320-12DB0CCDF09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C986674C-D566-40A5-A320-12DB0CCDF09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C986674C-D566-40A5-A320-12DB0CCDF09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E36881-9920-4DCC-90CA-CE77809236B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E36881-9920-4DCC-90CA-CE77809236B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E36881-9920-4DCC-90CA-CE77809236B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E36881-9920-4DCC-90CA-CE77809236B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

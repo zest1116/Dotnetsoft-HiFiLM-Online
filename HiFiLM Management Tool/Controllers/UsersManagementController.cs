@@ -46,5 +46,21 @@ namespace Dotnetsoft.HiFiLM.Management.Tool.Controllers
 
             return new EmptyResult();
         }
+
+        public async Task<JsonResult> SearchUsers(string keyword)
+        {
+            using (UsersService service = new UsersService(Helpers.GraphHelper.GetAuthenticatedClient()))
+            {
+                Graph.Results.UsersResult usersResult;
+                if (TempData["GraphRequest"] == null)
+                    usersResult = await service.SearchUsersAsync(keyword);
+                else
+                    usersResult = await service.SearchUsersAsync((Microsoft.Graph.IGraphServiceUsersCollectionRequest)TempData["GraphRequest"], keyword);
+
+                TempData["GraphRequest"] = usersResult.NextPageRequest;
+
+                return Json(usersResult.Users, JsonRequestBehavior.AllowGet);
+            }
+        }
     }
 }

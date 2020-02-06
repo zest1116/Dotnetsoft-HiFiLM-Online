@@ -10,19 +10,15 @@
         <div class="card">
             <div class="card-header">
                 <div class="card-tools float-left">
-                    <div class="input-group input-group-sm mt-0" >
-                        <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                        </div>
+                    <div class="input-group input-group-sm mt-0">
+                        <input type="text" id="txtUserSearch" name="table_search" class="form-control" placeholder="Name or email" data-request-url="@Url.Action("SearchUsers", "UsersManagement")" >
                     </div>
                 </div>
                 <div class="card-tools">
                     <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary">New User</button>
-                        <button type="button" class="btn btn-primary">Delete User</button>
-                        <button type="button" class="btn btn-primary">Bulk Create</button>
+                        <button type="button" class="btn btn-outline-secondary">New User</button>
+                        <button type="button" class="btn btn-outline-secondary">Delete User</button>
+                        <button type="button" class="btn btn-outline-secondary">Bulk Create</button>
                     </div>
                 </div>
             </div>
@@ -38,6 +34,10 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @*@{ 
+                            var graphRequest = TempData["GraphRequest"] as Microsoft.Graph.IGraphServiceUsersCollectionRequest;
+                            TempData.Keep("GraphRequest");
+                        }*@
                         @foreach (var item in Model)
                         {
                             <tr>
